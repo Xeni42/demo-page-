@@ -4,179 +4,156 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Seltsame Seite v0</title>
-<link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-<header class="sh-header">
-  <div class="sh-page">
-    <strong>Seltsame Seite v0</strong>
-    <nav>
-      <a href="#hero">Start-ish</a> |
-      <a href="#cards">Blöcke</a> |
-      <a href="#form">Eingabe-Ding</a> |
-      <a href="#">Irgendwohin</a>
-    </nav>
-  </div>
-</header>
-
-<main class="sh-page sh-main">
-
-  <!-- HERO -->
-  <section id="hero" class="sh-hero">
-    <h1>Diese Seite macht… irgendwas.</h1>
-    <p>
-      Nicht ganz klar. Vielleicht Layout. Vielleicht Test.
-      Vielleicht einfach nur Vibes.
-    </p>
-
-    <br />
-
-    <a class="sh-button sh-button-primary" href="#form">Mach etwas</a>
-    <a class="sh-button sh-button-secondary" href="#cards">Sieh Blöcke</a>
-  </section>
-
-  <!-- CARDS -->
-  <section id="cards" class="sh-grid-2">
-    <article class="sh-card sh-card-highlight">
-      <h2>Block A</h2>
-      <p>
-        Dieser Block existiert einfach. Beim Hover fühlt er sich wichtig.
-        Reicht erstmal.
-      </p>
-    </article>
-
-    <article class="sh-card">
-      <h2>Block B</h2>
-      <p>
-        Fast gleich wie Block A. Nur emotional etwas schwächer.
-      </p>
-    </article>
-  </section>
-
-  <!-- SIDEBAR GRID -->
-  <section class="sh-grid-sidebar">
-    <article class="sh-card">
-      <h2>Große Seite</h2>
-      <p>
-        Dieser Bereich ist breiter. Hat er selbst entschieden.
-      </p>
-    </article>
-
-    <aside class="sh-card">
-      <h3>Kleine Seite</h3>
-      <p>
-        Kleiner. Hat es akzeptiert.
-      </p>
-    </aside>
-  </section>
-
-  <!-- IMAGE -->
-  <section class="sh-card">
-    <h2>Hier wohnt ein Bild</h2>
-    <img
-      class="sh-image-cover"
-      src="https://images.unsplash.com/photo-1485546246426-74dc88dec4d9?q=80&w=869&auto=format&fit=crop"
-      alt="irgendein Mensch mit Buch"
-    />
-  </section>
-  
-  <section class="sh-card sh-dashboard-card" id="dashboardCard">
-  <h2>Mini Dashboard</h2>
-
-  <div class="sh-dashboard-grid">
-    <div class="sh-metric">
-      <span>Besuche</span>
-      <strong>248</strong>
+<body>
+  <header class="sh-header">
+    <div class="sh-page">
+      <strong>Seltsame Seite v0</strong>
+      <nav>
+        <a href="#hero">Start-ish</a> |
+        <a href="#cards">Blöcke</a> |
+        <a href="#form">Eingabe-Ding</a> |
+        <a href="#output">Ergebnis</a>
+      </nav>
     </div>
+  </header>
 
-    <div class="sh-metric">
-      <span>Klicks</span>
-      <strong>37</strong>
-    </div>
+  <main class="sh-page sh-main">
+    <section id="hero" class="sh-hero">
+      <h1>Diese Seite macht… irgendwas.</h1>
+      <p>Nicht ganz klar. Vielleicht Layout. Vielleicht Test. Vielleicht einfach nur Vibes.</p>
 
-    <div class="sh-metric">
-      <span>Formulare</span>
-      <strong>12</strong>
-    </div>
+      <a class="sh-button sh-button-primary" href="#form">Mach etwas</a>
+      <a class="sh-button sh-button-secondary" href="#cards">Sieh Blöcke</a>
+    </section>
 
-    <div class="sh-metric">
-      <span>Rate</span>
-      <strong>4.8%</strong>
-    </div>
-  </div>
+    <section id="cards" class="sh-grid-2">
+      <article class="sh-card sh-card-highlight">
+        <h2>Block A</h2>
+        <p>Dieser Block existiert einfach. Beim Hover fühlt er sich wichtig. Reicht erstmal.</p>
+      </article>
 
-  <div class="sh-fake-chart">
-    <div style="height: 40%"></div>
-    <div style="height: 70%"></div>
-    <div style="height: 55%"></div>
-    <div style="height: 90%"></div>
-    <div style="height: 65%"></div>
-  </div>
-</section>
+      <article class="sh-card">
+        <h2>Block B</h2>
+        <p>Fast gleich wie Block A. Nur emotional etwas schwächer.</p>
+      </article>
+    </section>
 
-  <!-- FORM -->
-  <section id="form" class="sh-card">
-    <h2>Eingabe-Maschine</h2>
+    <section class="sh-grid-sidebar">
+      <article class="sh-card">
+        <h2>Große Seite</h2>
+        <p>Dieser Bereich ist breiter. Hat er selbst entschieden.</p>
+      </article>
 
-    <form class="sh-form">
-      <div>
-        <label class="sh-label" for="title">Name vom Ding</label>
-        <input
-          class="sh-input"
-          id="title"
-          type="text"
-          placeholder="Schreib irgendwas… wirklich egal…"
-        />
+      <aside class="sh-card">
+        <h3>Kleine Seite</h3>
+        <p>Kleiner. Hat es akzeptiert.</p>
+      </aside>
+    </section>
+
+    <section class="sh-card">
+      <h2>Hier wohnt ein Bild</h2>
+      <img
+        class="sh-image-cover"
+        src="https://images.unsplash.com/photo-1485546246426-74dc88dec4d9?q=80&w=869&auto=format&fit=crop"
+        alt="Mensch mit Buch"
+      />
+    </section>
+
+    <section class="sh-card sh-dashboard-card" id="dashboardCard">
+      <h2>Mini Dashboard</h2>
+
+      <div class="sh-dashboard-grid">
+        <div class="sh-metric">
+          <span>Besuche</span>
+          <strong id="visitsCount">0</strong>
+        </div>
+
+        <div class="sh-metric">
+          <span>Klicks</span>
+          <strong id="clicksCount">0</strong>
+        </div>
+
+        <div class="sh-metric">
+          <span>Formulare</span>
+          <strong id="formsCount">0</strong>
+        </div>
+
+        <div class="sh-metric">
+          <span>Rate</span>
+          <strong id="rateCount">0%</strong>
+        </div>
       </div>
 
-      <div>
-        <label class="sh-label" for="category">Wähle Stimmung</label>
-        <select class="sh-select" id="category">
-          <option>Ruhig</option>
-          <option>Verwirrt</option>
-          <option>Sehr überzeugt</option>
-        </select>
+      <div class="sh-fake-chart">
+        <div style="height: 40%"></div>
+        <div style="height: 70%"></div>
+        <div style="height: 55%"></div>
+        <div style="height: 90%"></div>
+        <div style="height: 65%"></div>
       </div>
+    </section>
 
-      <div>
-        <label class="sh-label" for="text">Längere Gedanken</label>
-        <textarea
-          class="sh-textarea"
-          id="text"
-          placeholder="Kipp dein Gehirn hier rein..."
-        ></textarea>
-      </div>
+    <section id="form" class="sh-card">
+      <h2>Eingabe-Maschine</h2>
 
-      <div class="sh-option">
-        <input type="checkbox" id="check1" />
-        <label for="check1">Aktiviere Geheimnis</label>
-      </div>
+      <form class="sh-form">
+        <div>
+          <label class="sh-label" for="title">Name vom Ding</label>
+          <input
+            class="sh-input"
+            id="title"
+            type="text"
+            placeholder="Schreib irgendwas… wirklich egal…"
+          />
+        </div>
 
-      <div class="sh-option">
-        <input type="checkbox" id="check2" checked />
-        <label for="check2">Standard-Chaos</label>
-      </div>
+        <div>
+          <label class="sh-label" for="category">Wähle Stimmung</label>
+          <select class="sh-select" id="category">
+            <option value="ruhig">Ruhig</option>
+            <option value="verwirrt">Verwirrt</option>
+            <option value="ueberzeugt">Sehr überzeugt</option>
+          </select>
+        </div>
 
-      <button class="sh-button sh-button-primary" type="button">
-        Erzeuge irgendwas
-      </button>
-    </form>
-  </section>
+        <div>
+          <label class="sh-label" for="text">Längere Gedanken</label>
+          <textarea
+            class="sh-textarea"
+            id="text"
+            placeholder="Kipp dein Gehirn hier rein..."
+          ></textarea>
 
-  <!-- OUTPUT -->
-  <section class="sh-output">
-    <h2>Ergebnis-Zone</h2>
-    <p>
-      Hier erscheint später etwas. Vielleicht Text.
-      Vielleicht auch nichts.
-    </p>
-    <p>
-      Zeile 1: Hallo<br />
-      Zeile 2: Noch da<br />
-      Zeile 3: Ende
-    </p>
-  </section>
+          <div class="sh-quality" id="qualityBadge">
+            Textqualität: Schwach
+          </div>
+        </div>
 
-</main>
-<script src="script.js"></script>
+        <div class="sh-option">
+          <input type="checkbox" id="check1" />
+          <label for="check1">Aktiviere Geheimnis</label>
+        </div>
+
+        <div class="sh-option">
+          <input type="checkbox" id="check2" checked />
+          <label for="check2">Standard-Chaos</label>
+        </div>
+
+        <button class="sh-button sh-button-primary" type="button">
+          Erzeuge irgendwas
+        </button>
+      </form>
+    </section>
+
+    <section id="output" class="sh-output is-empty">
+      <h2>Ergebnis-Zone</h2>
+      <p>Hier erscheint später etwas. Vielleicht Text. Vielleicht auch nichts.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>

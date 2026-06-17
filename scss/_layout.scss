@@ -1,0 +1,28 @@
+/* PAGE LAYOUT */
+
+.sh-page {
+  width: min(100% - 2rem, 1200px);
+  margin: 0 auto;
+  padding: var(--space-lg) 0;
+}
+
+.sh-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: var(--space-md) 0;
+  background: rgba(33, 33, 33, 0.85);
+  backdrop-filter: blur(10px);
+}
+
+.sh-header .sh-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.sh-main {
+  display: grid;
+  gap: var(--space-lg);
+}
